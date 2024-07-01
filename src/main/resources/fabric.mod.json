@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "roshen",
+	"version": "${version}",
+	"name": "Roshen",
+	"description": "This is an mod developed as test task.",
+	"authors": [
+		"Elis"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/roshen/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.elis.roshen.Roshen"
+		],
+		"client": [
+			"com.elis.roshen.RoshenClient"
+		],
+		"fabric-datagen": [
+			"com.elis.roshen.RoshenDataGenerator"
+		]
+	},
+	"mixins": [
+		"roshen.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
