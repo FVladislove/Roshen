@@ -1,5 +1,6 @@
 package com.elis.roshen;
 
+import com.elis.roshen.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,8 @@ public class Roshen implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Mod initialing");
+
+		ModItems.registerModItems();
 	}
 }
