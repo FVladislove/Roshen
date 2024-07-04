@@ -17,7 +17,7 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block Poroshenko = registerBlock("poroshenko_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN).sounds(BlockSoundGroup.ANVIL)));
+            new Block(AbstractBlock.Settings.copy(Blocks.ACACIA_LEAVES).sounds(BlockSoundGroup.ANVIL)));
 
     private static Block registerBlock(String name, Block block){
         Roshen.LOGGER.info("Registering {} block", name);
