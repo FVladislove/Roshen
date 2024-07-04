@@ -1,5 +1,6 @@
 package com.elis.roshen;
 
+import com.elis.roshen.block.ModBlocks;
 import com.elis.roshen.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,5 +16,6 @@ public class Roshen implements ModInitializer {
 		LOGGER.info("Mod initialing");
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

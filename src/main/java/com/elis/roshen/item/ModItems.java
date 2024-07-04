@@ -29,12 +29,12 @@ public class ModItems {
     }
 
     private static Item registerItem(String name, Item item){
-        Roshen.LOGGER.info("Registering" + name + " item");
+        Roshen.LOGGER.info("Registering {} item", name);
         return Registry.register(Registries.ITEM, Identifier.of(Roshen.MOD_ID, name), item);
     }
 
     public static void registerModItems(){
-        Roshen.LOGGER.info("Registering Mod items for" + Roshen.MOD_ID);
+        Roshen.LOGGER.info("Registering Mod items for " + Roshen.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodAndDrinkTabItemGroup);
     }
