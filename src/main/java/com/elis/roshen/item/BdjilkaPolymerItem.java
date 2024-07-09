@@ -31,10 +31,10 @@ public class BdjilkaPolymerItem extends Item implements PolymerItem {
         return Items.APPLE;
     }
 
-//    @Override
-//    public ItemStack getPolymerItemStack(ItemStack itemStack, TooltipType tooltipType, RegistryWrapper.WrapperLookup lookup, @Nullable ServerPlayerEntity player) {
-//        return PolymerItem.super.getPolymerItemStack(itemStack, tooltipType, lookup, player);
-//    }
+    @Override
+    public ItemStack getPolymerItemStack(ItemStack itemStack, TooltipType tooltipType, RegistryWrapper.WrapperLookup lookup, @Nullable ServerPlayerEntity player) {
+        return PolymerItem.super.getPolymerItemStack(itemStack, tooltipType, lookup, player);
+    }
 
     @Override
     public int getPolymerCustomModelData(ItemStack itemStack, @Nullable ServerPlayerEntity player){

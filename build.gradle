@@ -31,9 +31,13 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation include("eu.pb4:polymer-core:0.9.2+1.21")
+	modImplementation include("eu.pb4:polymer-core:0.9.4+1.21")
+	modImplementation include("eu.pb4:polymer-blocks:0.9.4+1.21")
 	modImplementation include("eu.pb4:polymer-resource-pack:0.9.4+1.21")
-	
+	// used for hosting resource packs for clients
+	// while developing option "online-mod=false" should be in run/server.properties
+	modImplementation include("eu.pb4:polymer-autohost:0.9.4+1.21")
+
 }
 
 processResources {

@@ -20,6 +20,13 @@ public class Roshen implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 
+        PolymerResourcePackUtils.RESOURCE_PACK_CREATION_EVENT.register((dispatcher) ->{
+            LOGGER.info("Registering resource pack");
+        });
+
+        // to provide a resource pack for clients, you must first generate it
+        // using the command "/polymer generate-pack" (in the game or server console)
+        // to update, you must re-login
         if (PolymerResourcePackUtils.addModAssets(MOD_ID)) {
             LOGGER.info("Successfully added mod assets for " + MOD_ID);
         } else {
